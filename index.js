@@ -9,7 +9,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var app = (0, _express2.default)();
 
 app.get('/', function (req, res) {
-    res.send(`<iframe width="560" height="315" src="https://www.youtube.com/embed/PLiKpF-tLE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+    res.json({ "message": "nie mam pomysłu na message" });
 });
 
 app.listen(process.env.PORT || 3000, function () {
